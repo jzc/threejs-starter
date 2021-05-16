@@ -3,7 +3,7 @@
     "scripts": {
         "build": "webpack --config-name prod",
         "server": "webpack serve --config-name dev --open",
-        "publish": "gh-pages -d dist"
+        "publish": "npm run build && gh-pages -d dist"
     },
     "dependencies": {
         "dat.gui": "^0.7.7",
